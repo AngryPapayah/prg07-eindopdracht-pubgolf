@@ -1,29 +1,45 @@
 {
   "expo": {
-    "name": "prg07-eindopdracht-pubgolf",
+    "name": "Pub Golf Leiden",
     "slug": "prg07-eindopdracht-pubgolf",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1B4332"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.angrypapayah.pubgolfleiden"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#1B4332"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.angrypapayah.pubgolfleiden"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Pub Golf Leiden gebruikt je locatie om je positie op de kaart te tonen."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Pub Golf Leiden wil foto's maken bij elke kroeg."
+        }
+      ]
+    ]
   }
 }
