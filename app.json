@@ -25,7 +25,10 @@
       "package": "com.angrypapayah.pubgolfleiden"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "static",
+      "baseUrl": "/prg07-eindopdracht-pubgolf"
     },
     "plugins": [
       [
