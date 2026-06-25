@@ -5,11 +5,6 @@ const REMOTE_URL =
   'https://raw.githubusercontent.com/AngryPapayah/prg07-eindopdracht-pubgolf/main/assets/data/holes.json';
 
 export async function fetchHoles() {
-  // In development, always use local data so changes in holes.json are reflected immediately
-  if (__DEV__) {
-    return { holes: localHoles.holes, fromCache: false };
-  }
-
   try {
     const response = await fetch(REMOTE_URL);
     if (!response.ok) throw new Error('Network response not ok');
