@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import translations from '../i18n/translations';
+import translations from '../languages/translations';
 
 const COLORS = {
   dark: {
